@@ -1,0 +1,88 @@
+
+  <main id="main-wrapper">
+  
+  
+  <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please answer as honestly as possible. Thank you for your time</p>
+    <p id="legend" class="required-text">* denotes a required field </p>
+  </header>
+  
+  
+  <form id="survey-form" action="" method="POST">
+    
+    <div id="name-div" class="div">
+      <label for="name-div"><strong>Full Name: <span class="required-text">*</span></strong></label>
+      <input id="name-input" name="name" type="text" placeholder="First name, Middle Initial, and Last Name (ex. Anthony C. Ozanic)" autofocus="autofocus" value="" required>
+    </div>
+    
+    <div id="email-div" class="div">
+      <label for="email-div"><strong>Email Address: <span class="required-text">*</span></strong> </label>
+      <input type="email" value="" name="email" placeholder="example_email@gmail.com" required>
+    </div>
+    
+    <div id="language-div" class="div">
+      <label for="language-div"><strong>Preferred Language: <span class="required-text">*</span></strong></label>
+      <select required>
+        <option value="" disabled selected style="display: none;">Language...</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Java">Java</option>
+        <option value="Python">Python</option>
+        <option value="C++">C++</option>
+        <option value="C#">C#</option>
+      </select>
+    </div>
+    
+    <div id="age-div" class="div">
+      <label for="age-div"><strong>Age: <span class="required-text">*</span></strong></label>
+      <input type="number" min="18" max="120" required>
+    </div>
+    
+    <div id="marketing-src" class="div">
+      <label for="marketing-src"><strong>How did you hear about us?</strong></label><br>
+      <input type="checkbox" value="social-Media" id="social-box">
+      <label for="social-box">Social Media</label><br>
+      
+      <input type="checkbox" value="search-engine" id="engine-box">
+       <label for="engine-box">Search Engine</label><br>
+      
+      <input type="checkbox" value="wom" id="wom-box">
+      <label for="wom-box">Word-of-mouth</label><br>
+      
+      <label for="other-box"><strong> Other: </strong></label>
+      <input type="text" id="other-box" value="">
+      
+    </div>
+    
+    <div id="recommend-div" class="div">
+      <label for="recommend-div"><strong>Would you recommend us to a friend or collegue?</strong></label> <br>
+      
+      <input type="radio" class="btn btn-toggle" name="recommend" id="yes-radio" value="yes">
+      <label for="yes-radio">Yes!</label><br>
+      
+      <input type="radio" class="btn btn-toggle" name="recommend" id="definitely-radio" value="definitely">
+      <label for="definitely-radio">Definitely!</label><br>
+      
+      <input type="radio" class="btn btn-toggle" name="recommend" id="absolutely-radio" value="absolutely">
+      <label for="absolutely-radio">Absolutely!</label><br>
+      
+    </div>
+    
+    <div id="satisfaction-bar" class="div">
+      <label for="satisfaction-bar"><strong>How satisfied do you feel while using this product?</strong></label>
+      <input type="range" size="1" min="0" max="100">
+    </div>
+    
+    <div id="additional-comments" class="div">
+      <label for="additional-comments"><strong>Any additional comments?</strong></label>
+      <input id="add-comments" type="textarea">
+    </div>
+    
+    <div id="submit">
+      <button type="submit"><strong>Submit!</strong></button>
+    </div>
+    
+  </form>
+  
+  
+</main>
